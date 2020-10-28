@@ -36,9 +36,18 @@ public class SinglyLinkedListUtility {
 		 * Create a new Node
 		 */
 		Node newNode = new Node(element);
+		/*
+		 * Point next of New node to current Head, so that
+		 * newNode.next(which is null) will be re-assigned to an address
+		 * and can establish a link between subsequent node
+		 */
+		newNode.next = head;
+		/*
+		 * Now, point Head to the New Node as this will be starting of LinkedList
+		 */
+		head = newNode;
 		
-		
-		return false;
+		return true;
 	}
 	
 	
@@ -101,6 +110,50 @@ public class SinglyLinkedListUtility {
 	 */
 	public void clear() {
 		
+	}
+	
+	/**
+	 * Find element at a particular index in a LinkedList
+	 * @param position, the position where the element needs to be 
+	 *        found out
+	 * @return element, if the element is found
+	 *         null     otherwise
+	 */
+	public Object elementAtIndex(int position) {
+		if (position >= size())
+			return null;
+		
+		
+		return null;
+	}
+	
+	
+	/**
+	 * Find the length of a LinkedList
+	 * @return
+	 */
+	public int size() {
+		
+		Node node = head;
+		int count = 0;
+		
+		/*
+		 * Iterate until we don't reach at the last node
+		 */
+		while(node != null) {
+			count ++;
+			node = node.next; // Mark the pointer to the next node
+		}
+		return count;
+	}
+	
+	
+	public void iterate() {
+		Node node = head;
+		while(node!=null) {
+			System.out.println(node.data);
+			node = node.next;
+		}
 	}
 	
 }
