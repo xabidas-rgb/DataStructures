@@ -41,6 +41,12 @@ public class SumCalculatorsOfNumsInString {
 		}
 	}
 	
+	/**
+	 * Calculates the sum of all the numbers present
+	 * in a String
+	 * @param  input, The input string from which the numbers will be calculated.
+	 * @return sum,   Total sum of all numbers present in that String
+	 */
 	public int calculateNumsInString(String input) {
 		if (input == null || input == "")
 			return 0;
