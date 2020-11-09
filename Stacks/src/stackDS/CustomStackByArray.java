@@ -49,7 +49,7 @@ public class CustomStackByArray {
 	 *         false, otherwise
 	 */
 	public static boolean isFull() {
-		return top >= array.length-1 ? true : false;
+		return top == DEFAULT_SIZE-1 ? true : false;
 	}
 	
 	/**
@@ -90,7 +90,7 @@ public class CustomStackByArray {
 	 * Iterate the stack elements
 	 */
 	public void iterate() {
-		for(int i=0;i<top;i++) {
+		for(int i=0;i<=top;i++) {
 			System.out.println(array[i].toString());
 		}
 	}

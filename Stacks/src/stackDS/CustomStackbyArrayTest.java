@@ -4,12 +4,13 @@ public class CustomStackbyArrayTest {
 	
 	public static void main(String[] args) throws StackOverFlowException, 
 	                                              StackUnderFlowException {
-		CustomStackByArray stackByArray = new CustomStackByArray();
+		CustomStackByArray stackByArray = new CustomStackByArray(8);
 		stackByArray.push(10);
 		stackByArray.push(20);
 		stackByArray.push(30);
 		stackByArray.push(40);
 		stackByArray.push(50);
+		stackByArray.push(60);
 		
 		stackByArray.iterate();
 		
