@@ -18,5 +18,7 @@ public class CustomStackbyArrayTest {
 		System.out.println("Popped out element from the stack : " + stackByArray.pop());
 		System.out.println("Length of stack after popping out element : " + CustomStackByArray.size());
 		stackByArray.iterate();
+		System.out.println("Is the element present ? " + stackByArray.search(10));
+		
 	}
 }

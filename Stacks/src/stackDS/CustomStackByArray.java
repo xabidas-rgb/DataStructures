@@ -102,4 +102,24 @@ public class CustomStackByArray {
 	public static int size() {
 		return (top+1);
 	}
+	
+	/**
+	 * 
+	 * @param  element, The target element that needs to be searched in Stack
+	 * @return 1-based position of the element in the stack
+	 *         -1 if the element is not present in the stack
+	 */
+	public int search(Object element) {
+		if (element == null)
+			return -1;
+		
+		if(size() > 0) {
+			for(int i=0; i<=top+1;i++) {
+				if(array[i].equals(element)) {
+					return i+1;
+				}
+			}
+		}
+		return -1;
+	}
 }
