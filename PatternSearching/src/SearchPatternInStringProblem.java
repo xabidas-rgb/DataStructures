@@ -62,5 +62,5 @@ public class SearchPatternInStringProblem {
 
 /*
  * Here we are converting String to an char array and searching on basis of each character.
- * This is a naive approach to solve this kind of pattern searching problem.
+ * This is called as 'Naive Algorithm' which solves this kind of pattern searching problem.
  */
