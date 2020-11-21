@@ -46,6 +46,9 @@ public class FixedPointFinderInArray {
 	public int findFixedPoint(int[] arr) {
 		int fixedPoint = 0;
 		
+		if(arr == null)
+			return fixedPoint;
+		
 		for(int i=0; i<arr.length;i++) {
 			if (arr[i]==i) {
 				fixedPoint = i;
